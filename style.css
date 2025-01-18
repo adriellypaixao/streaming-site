@@ -120,13 +120,16 @@ h1 {
     }
 
     #navlist {
-        /* display: block; */
         position: absolute;
         height: calc(100% - 2em - 8px);
         width: 200px;
         background-color: black;
         box-shadow:  0 0 5px rgba(0, 0, 0, 0.6);
         display: none;
+    }
+
+    #navlist.show {
+        display: block;
     }
     
     #navlist > ul  {
@@ -152,7 +155,6 @@ h1 {
         height: 40px;
         margin-top: 4px;
         left: 6px;
-
     }
 
     #sidebar-button #sidebar-button-icon {
