@@ -1,24 +1,17 @@
-function resetset_Sidebar() {
-    if (document.getElementById("sidebar-button-icon").style.display != "none") {
-        document.getElementById("navlist").style.display = "none";
-        document.getElementById("sidebar-button-icon").innerHTML = "▶";
-        document.getElementById("sidebar-button-icon").style = "padding-left: 5px; padding-right: 0;";
-    } else {
-        document.getElementById("navlist").style.display = "none";
-        document.getElementById("sidebar-button-icon").innerHTML = "▶";
-        document.getElementById("sidebar-button-icon").style = "padding-left: 5px; padding-right: 0;";
-    }
-}
-
 function active_sidebar(style_display) {
-    if (style_display == "none") {
-        document.getElementById("navlist").style.display = "block";
-        document.getElementById("sidebar-button-icon").innerHTML = "◀";
-        document.getElementById("sidebar-button-icon").style = "padding-left: 0; padding-right: 5px;";
+    const navlist = document.getElementById("navlist");
+    const icon = document.getElementById("sidebar-button-icon");
+
+    if (navlist.classList.contains("show")) {
+        navlist.classList.remove("show");
+        icon.innerHTML = "▶";
+        icon.style.paddingLeft = "5px";
+        icon.style.paddingRight = "0";
     } else {
-        document.getElementById("navlist").style.display = "none";
-        document.getElementById("sidebar-button-icon").innerHTML = "▶";
-        document.getElementById("sidebar-button-icon").style = "padding-left: 5px; padding-right: 0;";
+        navlist.classList.add("show");
+        icon.innerHTML = "◀";
+        icon.style.paddingLeft = "0";
+        icon.style.paddingRight = "5px";
     }
 }
 
