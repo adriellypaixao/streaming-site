@@ -9,7 +9,7 @@
 <body>
     <header id="navbar">
         <h1>Stream</h1> 
-        <div id="navlist">
+        <div id="navlist" class="">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Filmes</a></li>
@@ -22,53 +22,15 @@
                 </li>
             </ul>
         </div>
+        <div id="sidebar-button" onclick="active_sidebar(document.getElementById('navlist').style.display)">
+            <p id="sidebar-button-icon" style="padding-left: 5px;">▶</p>
+        </div>
         <div id="search-bar">
             <input type="text" name="pesquisar" id="input-pesquisar" placeholder="Pesquisar">
         </div>
     </header>
 
-    <!-- teste de como fazer as rows que rolam na tela -->
-    <br>
-    <div class="row">
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
+    <br><div class="row">
         <div class="item">item</div>
         <div class="item">item</div>
         <div class="item">item</div>
@@ -91,9 +53,8 @@
         <div class="item">item</div>
         <div class="item">item</div>
         <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
+    </div>
+    <br><div class="row">
         <div class="item">item</div>
         <div class="item">item</div>
         <div class="item">item</div>
@@ -106,5 +67,7 @@
         <div class="item">item</div>
     </div>
     <br>
+
+    <script src="script.js"></script>
 </body>
 </html>
