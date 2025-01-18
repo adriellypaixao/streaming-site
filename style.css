@@ -4,7 +4,9 @@ body {
 }
 
 header {
+    height: 100px;
     background-color: black;
+    box-shadow: 0 0 8px gray;
 }
 
 h1 {
@@ -66,6 +68,10 @@ h1 {
     border: 1px solid gray;
 }
 
+#sidebar-button {
+    display: none;
+}
+
 @media (min-width: 1400px) {
     #nav-account-buttons {
         position: absolute;
@@ -97,15 +103,64 @@ h1 {
 }
 
 @media (max-width: 700px) {
+    #navlist {
+        display: flex;
+    }
+
     #navlist ul {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
     }
 }
 
 @media (max-width: 470px) {
-    #navlist ul {
-        padding-left: 5%;
-        padding-right: 5%;
+    header {
+        height: 100px;
+    }
+
+    #navlist {
+        /* display: block; */
+        position: absolute;
+        height: calc(100% - 2em - 8px);
+        width: 200px;
+        background-color: black;
+        box-shadow:  0 0 5px rgba(0, 0, 0, 0.6);
+        display: none;
+    }
+    
+    #navlist > ul  {
+        display: block;
+        position: relative;
+        top: 60px;
+    }
+    
+    #navlist > ul > li  {
+        display: flex;
+        margin-bottom: 12px;
+        margin-left: -10px;
+    }
+
+    #sidebar-button {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        left: 6px;
+
+    }
+
+    #sidebar-button #sidebar-button-icon {
+        max-inline-size: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        margin-top: -2px;
     }
 }
