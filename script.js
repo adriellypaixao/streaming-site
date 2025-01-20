@@ -337,3 +337,14 @@ arrayFilmes[29] = new filme(
     "Terror, Animação, Musical",
     "Henry Selick"
 );
+
+
+/* não está funconando! */
+function exibirRow_geral() {
+    let text = "";
+    for (i = 0; i < arrayFilmes.length; i++) {
+        text += "olá";
+    }
+
+    document.getElementById("row-geral").innerHTML = text;
+}
