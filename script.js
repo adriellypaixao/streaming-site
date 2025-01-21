@@ -1,4 +1,5 @@
 const arrayFilmes = [];
+let n;
 
 function active_sidebar(style_display) {
     const navlist = document.getElementById("navlist");
@@ -25,7 +26,7 @@ function teste(stylevalue) {
 this.imagemCapa = imagemCapa;
 this.linkTrailer = linkTrailer;
  */
-function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, diretor) {
+function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, diretor, linkTrailer) {
     this.imagemCapa = imagemCapa;
     this.titulo = titulo;
     this.descricao = descricao;
@@ -33,6 +34,7 @@ function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, di
     this.anoLancamento = anoLancamento;
     this.genero = genero;
     this.diretor = diretor;
+    this.linkTrailer = linkTrailer
 } 
 
 // Filmes de Fantasia
@@ -43,7 +45,8 @@ arrayFilmes[0] = new filme(
     "178 minutos",
     2001,
     "Fantasia, Aventura",
-    "Peter Jackson"
+    "Peter Jackson",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/0i86oM1nHjM?si=FzEkNDr0blqhyzz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[1] = new filme(
@@ -194,7 +197,8 @@ arrayFilmes[15] = new filme(
     "126 minutos",
     2007,
     "Romance, Drama",
-    "Richard LaGravenese"
+    "Richard LaGravenese",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/CZzW6_hR068?si=Nqng_-eDaWUdr27Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[16] = new filme(
@@ -204,7 +208,8 @@ arrayFilmes[16] = new filme(
     "108 minutos",
     2010,
     "Romance, Comédia",
-    "Nanette Burstein"
+    "Nanette Burstein",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/bkBDo2WMaXI?si=B3bi4lOMN4bV_t-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[17] = new filme(
@@ -214,7 +219,8 @@ arrayFilmes[17] = new filme(
     "105 minutos",
     1997,
     "Romance, Comédia",
-    "P.J. Hogan"
+    "P.J. Hogan",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/7gRQFgdtAXs?si=frpAiOY8s08zdC3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[18] = new filme(
@@ -224,7 +230,8 @@ arrayFilmes[18] = new filme(
     "101 minutos",
     1995,
     "Romance, Drama",
-    "Richard Linklater"
+    "Richard Linklater",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/6MUcuqbGTxc?si=9bQ5O37GzksZg9IW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[19] = new filme(
@@ -234,7 +241,8 @@ arrayFilmes[19] = new filme(
     "123 minutos",
     2013,
     "Romance, Comédia, Drama",
-    "Richard Curtis"
+    "Richard Curtis",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/-0gX9g4Lxm8?si=oNUoRCPvan3na0P1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 // Filmes de Terror
@@ -245,7 +253,8 @@ arrayFilmes[20] = new filme(
     "122 minutos",
     1973,
     "Terror, Drama",
-    "William Friedkin"
+    "William Friedkin",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BU2eYAO31Cc?si=zZ3EL5A3m8HEIdRS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[21] = new filme(
@@ -255,7 +264,8 @@ arrayFilmes[21] = new filme(
     "109 minutos",
     1960,
     "Terror, Mistério",
-    "Alfred Hitchcock"
+    "Alfred Hitchcock",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BwVKSGu8wEA?si=rb1UfUEPo1Cj8XeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[22] = new filme(
@@ -265,7 +275,8 @@ arrayFilmes[22] = new filme(
     "146 minutos",
     1980,
     "Terror, Mistério",
-    "Stanley Kubrick"
+    "Stanley Kubrick",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/FZQvIJxG9Xs?si=KUSH548lQbmMThaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[23] = new filme(
@@ -275,7 +286,8 @@ arrayFilmes[23] = new filme(
     "86 minutos",
     2007,
     "Terror, Sobrenatural",
-    "Oren Peli"
+    "Oren Peli",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/zissB5GT1O0?si=0CUrv06sofchFC8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[24] = new filme(
@@ -285,7 +297,8 @@ arrayFilmes[24] = new filme(
     "112 minutos",
     2013,
     "Terror, Mistério",
-    "James Wan"
+    "James Wan",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/GQrrXceHn2E?si=ZRctWLuHN5bCupI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[25] = new filme(
@@ -295,7 +308,8 @@ arrayFilmes[25] = new filme(
     "81 minutos",
     1999,
     "Terror, Mistério",
-    "Daniel Myrick, Eduardo Sánchez"
+    "Daniel Myrick, Eduardo Sánchez",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/MBZ-POVsrlI?si=0sV6eJCHu-1Uowy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[26] = new filme(
@@ -305,7 +319,8 @@ arrayFilmes[26] = new filme(
     "107 minutos",
     1999,
     "Terror, Mistério",
-    "M. Night Shyamalan"
+    "M. Night Shyamalan",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/3-ZP95NF_Wk?si=lcE3Kxsfla3bpPHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[27] = new filme(
@@ -315,7 +330,8 @@ arrayFilmes[27] = new filme(
     "127 minutos",
     2018,
     "Terror, Drama",
-    "Ari Aster"
+    "Ari Aster",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/V6wWKNij_1M?si=bU2BIyR7ULPbOdH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[28] = new filme(
@@ -325,7 +341,8 @@ arrayFilmes[28] = new filme(
     "93 minutos",
     2014,
     "Terror, Suspense",
-    "Jennifer Kent"
+    "Jennifer Kent",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/k5WQZzDRVtw?si=ydv2HaPdSfYD3EVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[29] = new filme(
@@ -335,13 +352,14 @@ arrayFilmes[29] = new filme(
     "76 minutos",
     1993,
     "Terror, Animação, Musical",
-    "Henry Selick"
+    "Henry Selick",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/wr6N_hZyBCk?si=Zq2h3xt-s6z-qQdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 function exibirRow_geral() {
     let text = ""
     for (x in arrayFilmes) {
-        text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`
+        text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`
     }
     document.getElementById("row-geral").innerHTML = text;
 }
@@ -350,7 +368,7 @@ function exibirRow_Fantasia() {
     let text = "<h2>Fantasia</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Fantasia")) {
-            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-fantasia").innerHTML = text;
@@ -360,7 +378,7 @@ function exibirRow_Romance() {
     let text = "<h2>Romance</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Romance")) {
-            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-romance").innerHTML = text;
@@ -370,8 +388,27 @@ function exibirRow_Terror() {
     let text = "<h2>Terror</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Terror")) {
-            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-terror").innerHTML = text;
+}
+
+function definirEspecifico(arrayIndex) {
+    n = arrayIndex
+    /* alert(arrayFilmes[arrayIndex].titulo) */
+    if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("indexEspecifico", n)
+    } else {
+        alert("Não é possivel guardar os dados necessarios para acessar esse filme.")
+    }
+    alert(localStorage.getItem("indexEspecifico"))    
+}
+
+function ExibirDetalhes() {
+    let idArrayFilmes = localStorage.getItem("indexEspecifico");
+    /* alert(arrayFilmes[localStorage.getItem("indexEspecifico")].titulo) */
+    let text = `<div>${arrayFilmes[idArrayFilmes].linkTrailer}</div>`
+    document.getElementById("filmeEspecifico_id").innerHTML = text;
+    document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
 }
