@@ -190,7 +190,7 @@ arrayFilmes[13] = new filme(
     2008,
     "Romance, Musical, Comédia",
     "Phyllida Lloyd",
-    `<iframe src="https://www.youtube.com/embed/BjJcYdEOI0k?si=hHz0gLnhRZNarM0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/iCVpJ8x1Tnc?si=oUgvkdr5TZBhZ3Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[14] = new filme(
@@ -201,7 +201,7 @@ arrayFilmes[14] = new filme(
     2016,
     "Romance, Musical, Drama",
     "Damien Chazelle",
-    `<iframe src="https://www.youtube.com/embed/iCVpJ8x1Tnc?si=wMCp_cseV-sd34mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/1e578k3_yyc?si=x4vPtyOjQH_pPAjN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[15] = new filme(
@@ -212,7 +212,7 @@ arrayFilmes[15] = new filme(
     2007,
     "Romance, Drama",
     "Richard LaGravenese",
-    `<iframe src="https://www.youtube.com/embed/zXvgkkNMi-4?si=zaY0ANom6NzI0EIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/CZzW6_hR068?si=JDugjkGFU-CtnDjv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[16] = new filme(
@@ -279,7 +279,7 @@ arrayFilmes[21] = new filme(
     1960,
     "Terror, Mistério",
     "Alfred Hitchcock",
-    `<iframe src="https://www.youtube.com/embed/BwVKSGu8wEA?si=rb1UfUEPo1Cj8XeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/BwVKSGu8wEA?si=HVqj1_WDDdPoOadq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[22] = new filme(
@@ -408,6 +408,17 @@ function exibirRow_Terror() {
     document.getElementById("row-terror").innerHTML = text;
 }
 
+
+function exibirRow_Drama() {
+    let text = "<h2>Drama</h2>";
+    for (x in arrayFilmes) {
+        if (arrayFilmes[x].genero.includes("Drama")) {
+            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+        }
+    }
+    document.getElementById("row-drama").innerHTML = text;
+}
+
 function definirEspecifico(arrayIndex) {
     n = arrayIndex
     /* alert(arrayFilmes[arrayIndex].titulo) */
@@ -419,11 +430,20 @@ function definirEspecifico(arrayIndex) {
     /* alert(localStorage.getItem("indexEspecifico"));     */
 }
 
+/* function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, diretor, linkTrailer) { */
+
 function ExibirDetalhes() {
     let idArrayFilmes = localStorage.getItem("indexEspecifico");
     /* alert(arrayFilmes[localStorage.getItem("indexEspecifico")].titulo) */
-    let text = `${arrayFilmes[idArrayFilmes].linkTrailer}
-    <h1>teste</h1>`
+    let text = `<h1>${arrayFilmes[idArrayFilmes].titulo}</h1>
+        <div id="iframe_div">${arrayFilmes[idArrayFilmes].linkTrailer}</div>
+        <p>${arrayFilmes[idArrayFilmes].descricao}</p> 
+        <p><span>Duração: </span>${arrayFilmes[idArrayFilmes].duracao}</p> 
+        <p><span>Ano Lancamento: </span>${arrayFilmes[idArrayFilmes].anoLancamento}</p> 
+        <p><span>Generos: </span>${arrayFilmes[idArrayFilmes].genero}</p> 
+        <p><span>Diração: </span>${arrayFilmes[idArrayFilmes].diretor}</p> 
+        <p></p>`
+    
     document.getElementById("filmeEspecifico_id").innerHTML = text;
     document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
 }
