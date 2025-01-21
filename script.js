@@ -23,9 +23,9 @@ function teste(stylevalue) {
 
 /* imagemCapa, linkTrailer,
 this.imagemCapa = imagemCapa;
-this.linkTrailer = linkTrailer;
+
  */
-function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, diretor) {
+function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, diretor, linkTrailer) {
     this.imagemCapa = imagemCapa;
     this.titulo = titulo;
     this.descricao = descricao;
@@ -33,6 +33,7 @@ function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, di
     this.anoLancamento = anoLancamento;
     this.genero = genero;
     this.diretor = diretor;
+    this.linkTrailer = linkTrailer;
 } 
 
 // Filmes de Fantasia
@@ -43,7 +44,8 @@ arrayFilmes[0] = new filme(
     "178 minutos",
     2001,
     "Fantasia, Aventura",
-    "Peter Jackson"
+    "Peter Jackson",
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/0i86oM1nHjM?si=QRXLT-9j1bA7FIaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[1] = new filme(
@@ -54,6 +56,7 @@ arrayFilmes[1] = new filme(
     2001,
     "Fantasia, Aventura",
     "Chris Columbus"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/O7JVilOQdZ4?si=Wyhy2rHH2or5JC3J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[2] = new filme(
@@ -64,6 +67,7 @@ arrayFilmes[2] = new filme(
     2005,
     "Fantasia, Aventura",
     "Andrew Adamson"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/usEkWtuNn-w?si=hRDu-If9Md7EH9U2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[3] = new filme(
@@ -74,6 +78,7 @@ arrayFilmes[3] = new filme(
     2007,
     "Fantasia, Aventura",
     "Matthew Vaughn"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/LN2ijCQ1u6w?si=-tyS_4JeMdhZs_20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[4] = new filme(
@@ -84,6 +89,7 @@ arrayFilmes[4] = new filme(
     2010,
     "Fantasia, Aventura",
     "Tim Burton"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/P_IVeP3i7B0?si=7bDJE6gX1pAtnctB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[5] = new filme(
@@ -94,6 +100,7 @@ arrayFilmes[5] = new filme(
     2007,
     "Fantasia, Aventura",
     "Chris Weitz"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/LHYoOGfBObU?si=DDhGXrpV7ZDo496J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[6] = new filme(
@@ -104,6 +111,7 @@ arrayFilmes[6] = new filme(
     2012,
     "Fantasia, Aventura",
     "Peter Jackson"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/4AKkpnCKa2I?si=giP2XlPc4ZzEkaFV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[7] = new filme(
@@ -114,6 +122,7 @@ arrayFilmes[7] = new filme(
     1991,
     "Fantasia, Animação, Musical",
     "Gary Trousdale, Kirk Wise"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/iurbZwxKFUE?si=A4C2i5bHRFQ2069v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[8] = new filme(
@@ -134,6 +143,7 @@ arrayFilmes[9] = new filme(
     2006,
     "Fantasia, Drama, Guerra",
     "Guillermo del Toro"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/jVZRnnVSQ8k?si=jCMrp6hKimHSWzUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 // Filmes de Romance
@@ -145,6 +155,7 @@ arrayFilmes[10] = new filme(
     1997,
     "Romance, Drama",
     "James Cameron"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/IH6_CA_ocqY?si=_RY47xqwSCe9rN-W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[11] = new filme(
@@ -155,6 +166,7 @@ arrayFilmes[11] = new filme(
     2009,
     "Romance, Drama, Fantasia",
     "Chris Weitz"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/q58iQSHhZGg?si=-JxVxnk4LxmgbrYn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[12] = new filme(
@@ -165,6 +177,7 @@ arrayFilmes[12] = new filme(
     2004,
     "Romance, Drama",
     "Nick Cassavetes"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BjJcYdEOI0k?si=28bDKySIjzcYryF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[13] = new filme(
@@ -175,6 +188,7 @@ arrayFilmes[13] = new filme(
     2008,
     "Romance, Musical, Comédia",
     "Phyllida Lloyd"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BjJcYdEOI0k?si=hHz0gLnhRZNarM0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[14] = new filme(
@@ -185,6 +199,7 @@ arrayFilmes[14] = new filme(
     2016,
     "Romance, Musical, Drama",
     "Damien Chazelle"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/iCVpJ8x1Tnc?si=wMCp_cseV-sd34mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[15] = new filme(
@@ -195,6 +210,7 @@ arrayFilmes[15] = new filme(
     2007,
     "Romance, Drama",
     "Richard LaGravenese"
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/zXvgkkNMi-4?si=zaY0ANom6NzI0EIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[16] = new filme(
