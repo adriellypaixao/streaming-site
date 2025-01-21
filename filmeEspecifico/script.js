@@ -412,17 +412,18 @@ function definirEspecifico(arrayIndex) {
     n = arrayIndex
     /* alert(arrayFilmes[arrayIndex].titulo) */
     if (typeof(Storage) !== "undefined") {
-        localStorage.setItem("indexEspecifico", n)
+        localStorage.setItem("indexEspecifico", n);
     } else {
-        alert("Não é possivel guardar os dados necessarios para acessar esse filme.")
+        alert("Não é possivel guardar os dados necessarios para acessar esse filme.");
     }
-    alert(localStorage.getItem("indexEspecifico"))    
+    /* alert(localStorage.getItem("indexEspecifico"));     */
 }
 
 function ExibirDetalhes() {
     let idArrayFilmes = localStorage.getItem("indexEspecifico");
     /* alert(arrayFilmes[localStorage.getItem("indexEspecifico")].titulo) */
-    let text = `<div>${arrayFilmes[idArrayFilmes].linkTrailer}</div>`
+    let text = `${arrayFilmes[idArrayFilmes].linkTrailer}
+    <h1>teste</h1>`
     document.getElementById("filmeEspecifico_id").innerHTML = text;
     document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
 }
