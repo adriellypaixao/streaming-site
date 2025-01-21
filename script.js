@@ -289,7 +289,7 @@ arrayFilmes[24] = new filme(
 );
 
 arrayFilmes[25] = new filme(
-    "https://posters.movieposterdb.com/20_06/2021/10922778/xl_10922778_292260c3.jpg?v=2020-06-08%2023:05:47",
+    "https://posters.movieposterdb.com/20_06/2021/10922778/l_10922778_292260c3.jpg",
     "The Blair Witch Project",
     "Três cineastas se perdem enquanto filmam um documentário sobre uma lenda urbana na floresta de Maryland.",
     "81 minutos",
@@ -344,4 +344,34 @@ function exibirRow_geral() {
         text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`
     }
     document.getElementById("row-geral").innerHTML = text;
+}
+
+function exibirRow_Fantasia() {
+    let text = "<h2>Fantasia</h2>";
+    for (x in arrayFilmes) {
+        if (arrayFilmes[x].genero.includes("Fantasia")) {
+            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+        }
+    }
+    document.getElementById("row-fantasia").innerHTML = text;
+}
+
+function exibirRow_Romance() {
+    let text = "<h2>Romance</h2>";
+    for (x in arrayFilmes) {
+        if (arrayFilmes[x].genero.includes("Romance")) {
+            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+        }
+    }
+    document.getElementById("row-romance").innerHTML = text;
+}
+
+function exibirRow_Terror() {
+    let text = "<h2>Terror</h2>";
+    for (x in arrayFilmes) {
+        if (arrayFilmes[x].genero.includes("Terror")) {
+            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+        }
+    }
+    document.getElementById("row-terror").innerHTML = text;
 }
