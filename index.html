@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="exibirRow_geral()">
+<body onload="exibirRow_geral(), exibirRow_Fantasia(), exibirRow_Romance(), exibirRow_Terror()">
     <header id="navbar">
         <h1>Stream</h1> 
         <div id="navlist" class="">
@@ -30,34 +30,22 @@
         </div>
     </header>
 
-    <br><div class="row-geral">
-    </div>
-    <br><div class="row">
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-    </div>
-    <br><div class="row">
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
+    <br><div class="row" id="row-geral">
     </div>
     <br>
-
+    <br>
+    <div class="row" id="row-fantasia">
+    </div>
+    <br>
+    <br>
+    <div class="row" id="row-romance">
+    </div>
+    <br>
+    <br>
+    <div class="row" id="row-terror">
+    </div>
+    <br>
+    <!-- <p id="rowgeral"></p> -->
     <script src="script.js"></script>
 </body>
 </html>
