@@ -1,12 +1,12 @@
 body { 
     margin: 0; 
-    color: white;
 }
 
 header {
     height: 100px;
     background-color: black;
     box-shadow: 0 0 8px gray;
+    color: white;
 }
 
 h1 {
@@ -66,6 +66,26 @@ h1 {
     text-align: center;
     background-color: lightgray;
     border: 1px solid gray;
+}
+
+/* controlando as imagens */
+#row-geral, #row-fantasia, #row-romance, #row-terror {
+    max-height: fit-content;
+    border: 1px solid grey;
+    display: flex;
+    overflow: auto;
+    box-shadow: 0 0 10px grey;
+}
+
+#row-geral img, #row-fantasia img, #row-romance img, #row-terror img {
+    width: 100px;
+    height: 140px;
+    border-radius: 4px;
+}
+
+/* O que fazer com os titulos de rows??? */
+.row h2 {
+    display: none;
 }
 
 #sidebar-button {
