@@ -413,7 +413,7 @@ function exibirRow_Drama() {
     let text = "<h2>Drama</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Drama")) {
-            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-drama").innerHTML = text;
