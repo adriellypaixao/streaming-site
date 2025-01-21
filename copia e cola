@@ -1,0 +1,15 @@
+function getTextField() {
+	return document.getElementById("input-pesquisar").value;
+}
+
+verificarValor() {
+	let input = getTextField();
+	let text = " <div>";
+	for (x in arrayFilmes) {
+		if (x.titulo.contains(input)) {
+			text = `<p>${input.titulo}</p>`;	
+		}
+  text = "</div>"
+  document.getElementById("").innerHTML = text;
+	}
+}
