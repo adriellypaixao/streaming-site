@@ -46,7 +46,7 @@ arrayFilmes[0] = new filme(
     2001,
     "Fantasia, Aventura",
     "Peter Jackson",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/0i86oM1nHjM?si=FzEkNDr0blqhyzz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/0i86oM1nHjM?si=QRXLT-9j1bA7FIaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[1] = new filme(
@@ -56,7 +56,8 @@ arrayFilmes[1] = new filme(
     "152 minutos",
     2001,
     "Fantasia, Aventura",
-    "Chris Columbus"
+    "Chris Columbus",
+    `<iframe src="https://www.youtube.com/embed/O7JVilOQdZ4?si=Wyhy2rHH2or5JC3J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[2] = new filme(
@@ -66,7 +67,8 @@ arrayFilmes[2] = new filme(
     "143 minutos",
     2005,
     "Fantasia, Aventura",
-    "Andrew Adamson"
+    "Andrew Adamson",
+    `<iframe src="https://www.youtube.com/embed/usEkWtuNn-w?si=hRDu-If9Md7EH9U2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[3] = new filme(
@@ -76,7 +78,8 @@ arrayFilmes[3] = new filme(
     "127 minutos",
     2007,
     "Fantasia, Aventura",
-    "Matthew Vaughn"
+    "Matthew Vaughn",
+    `<iframe src="https://www.youtube.com/embed/LN2ijCQ1u6w?si=-tyS_4JeMdhZs_20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[4] = new filme(
@@ -86,7 +89,8 @@ arrayFilmes[4] = new filme(
     "108 minutos",
     2010,
     "Fantasia, Aventura",
-    "Tim Burton"
+    "Tim Burton",
+    `<iframe src="https://www.youtube.com/embed/P_IVeP3i7B0?si=7bDJE6gX1pAtnctB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[5] = new filme(
@@ -96,7 +100,8 @@ arrayFilmes[5] = new filme(
     "113 minutos",
     2007,
     "Fantasia, Aventura",
-    "Chris Weitz"
+    "Chris Weitz",
+    `<iframe src="https://www.youtube.com/embed/LHYoOGfBObU?si=DDhGXrpV7ZDo496J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[6] = new filme(
@@ -106,7 +111,8 @@ arrayFilmes[6] = new filme(
     "169 minutos",
     2012,
     "Fantasia, Aventura",
-    "Peter Jackson"
+    "Peter Jackson",
+    `<iframe src="https://www.youtube.com/embed/4AKkpnCKa2I?si=giP2XlPc4ZzEkaFV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[7] = new filme(
@@ -116,7 +122,8 @@ arrayFilmes[7] = new filme(
     "84 minutos",
     1991,
     "Fantasia, Animação, Musical",
-    "Gary Trousdale, Kirk Wise"
+    "Gary Trousdale, Kirk Wise",
+    `<iframe src="https://www.youtube.com/embed/iurbZwxKFUE?si=A4C2i5bHRFQ2069v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[8] = new filme(
@@ -126,7 +133,8 @@ arrayFilmes[8] = new filme(
     "118 minutos",
     2010,
     "Fantasia, Aventura",
-    "Chris Columbus"
+    "Chris Columbus",
+    `<iframe src="https://www.youtube.com/embed/R86InkfdboA?si=2ywtbqmob3NvzYXb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[9] = new filme(
@@ -136,7 +144,8 @@ arrayFilmes[9] = new filme(
     "118 minutos",
     2006,
     "Fantasia, Drama, Guerra",
-    "Guillermo del Toro"
+    "Guillermo del Toro",
+    `<iframe src="https://www.youtube.com/embed/jVZRnnVSQ8k?si=jCMrp6hKimHSWzUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 // Filmes de Romance
@@ -147,7 +156,8 @@ arrayFilmes[10] = new filme(
     "195 minutos",
     1997,
     "Romance, Drama",
-    "James Cameron"
+    "James Cameron",
+    `<iframe src="https://www.youtube.com/embed/IH6_CA_ocqY?si=_RY47xqwSCe9rN-W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[11] = new filme(
@@ -157,7 +167,8 @@ arrayFilmes[11] = new filme(
     "130 minutos",
     2009,
     "Romance, Drama, Fantasia",
-    "Chris Weitz"
+    "Chris Weitz",
+    `<iframe src="https://www.youtube.com/embed/q58iQSHhZGg?si=-JxVxnk4LxmgbrYn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[12] = new filme(
@@ -167,7 +178,8 @@ arrayFilmes[12] = new filme(
     "123 minutos",
     2004,
     "Romance, Drama",
-    "Nick Cassavetes"
+    "Nick Cassavetes",
+    `<iframe src="https://www.youtube.com/embed/BjJcYdEOI0k?si=28bDKySIjzcYryF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[13] = new filme(
@@ -177,7 +189,8 @@ arrayFilmes[13] = new filme(
     "108 minutos",
     2008,
     "Romance, Musical, Comédia",
-    "Phyllida Lloyd"
+    "Phyllida Lloyd",
+    `<iframe src="https://www.youtube.com/embed/BjJcYdEOI0k?si=hHz0gLnhRZNarM0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[14] = new filme(
@@ -187,7 +200,8 @@ arrayFilmes[14] = new filme(
     "128 minutos",
     2016,
     "Romance, Musical, Drama",
-    "Damien Chazelle"
+    "Damien Chazelle",
+    `<iframe src="https://www.youtube.com/embed/iCVpJ8x1Tnc?si=wMCp_cseV-sd34mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[15] = new filme(
@@ -198,7 +212,7 @@ arrayFilmes[15] = new filme(
     2007,
     "Romance, Drama",
     "Richard LaGravenese",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/CZzW6_hR068?si=Nqng_-eDaWUdr27Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/zXvgkkNMi-4?si=zaY0ANom6NzI0EIl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[16] = new filme(
@@ -209,7 +223,7 @@ arrayFilmes[16] = new filme(
     2010,
     "Romance, Comédia",
     "Nanette Burstein",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/bkBDo2WMaXI?si=B3bi4lOMN4bV_t-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/bkBDo2WMaXI?si=B3bi4lOMN4bV_t-O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[17] = new filme(
@@ -220,7 +234,7 @@ arrayFilmes[17] = new filme(
     1997,
     "Romance, Comédia",
     "P.J. Hogan",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/7gRQFgdtAXs?si=frpAiOY8s08zdC3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/7gRQFgdtAXs?si=frpAiOY8s08zdC3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[18] = new filme(
@@ -231,7 +245,7 @@ arrayFilmes[18] = new filme(
     1995,
     "Romance, Drama",
     "Richard Linklater",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/6MUcuqbGTxc?si=9bQ5O37GzksZg9IW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/6MUcuqbGTxc?si=9bQ5O37GzksZg9IW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[19] = new filme(
@@ -242,7 +256,7 @@ arrayFilmes[19] = new filme(
     2013,
     "Romance, Comédia, Drama",
     "Richard Curtis",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/-0gX9g4Lxm8?si=oNUoRCPvan3na0P1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/-0gX9g4Lxm8?si=oNUoRCPvan3na0P1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 // Filmes de Terror
@@ -254,7 +268,7 @@ arrayFilmes[20] = new filme(
     1973,
     "Terror, Drama",
     "William Friedkin",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BU2eYAO31Cc?si=zZ3EL5A3m8HEIdRS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/BU2eYAO31Cc?si=zZ3EL5A3m8HEIdRS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[21] = new filme(
@@ -265,7 +279,7 @@ arrayFilmes[21] = new filme(
     1960,
     "Terror, Mistério",
     "Alfred Hitchcock",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/BwVKSGu8wEA?si=rb1UfUEPo1Cj8XeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/BwVKSGu8wEA?si=rb1UfUEPo1Cj8XeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[22] = new filme(
@@ -276,7 +290,7 @@ arrayFilmes[22] = new filme(
     1980,
     "Terror, Mistério",
     "Stanley Kubrick",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/FZQvIJxG9Xs?si=KUSH548lQbmMThaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/FZQvIJxG9Xs?si=KUSH548lQbmMThaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[23] = new filme(
@@ -287,7 +301,7 @@ arrayFilmes[23] = new filme(
     2007,
     "Terror, Sobrenatural",
     "Oren Peli",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/zissB5GT1O0?si=0CUrv06sofchFC8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/zissB5GT1O0?si=0CUrv06sofchFC8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[24] = new filme(
@@ -298,7 +312,7 @@ arrayFilmes[24] = new filme(
     2013,
     "Terror, Mistério",
     "James Wan",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/GQrrXceHn2E?si=ZRctWLuHN5bCupI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/GQrrXceHn2E?si=ZRctWLuHN5bCupI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[25] = new filme(
@@ -309,7 +323,7 @@ arrayFilmes[25] = new filme(
     1999,
     "Terror, Mistério",
     "Daniel Myrick, Eduardo Sánchez",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/MBZ-POVsrlI?si=0sV6eJCHu-1Uowy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/MBZ-POVsrlI?si=0sV6eJCHu-1Uowy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[26] = new filme(
@@ -320,7 +334,7 @@ arrayFilmes[26] = new filme(
     1999,
     "Terror, Mistério",
     "M. Night Shyamalan",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/3-ZP95NF_Wk?si=lcE3Kxsfla3bpPHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/3-ZP95NF_Wk?si=lcE3Kxsfla3bpPHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[27] = new filme(
@@ -331,7 +345,7 @@ arrayFilmes[27] = new filme(
     2018,
     "Terror, Drama",
     "Ari Aster",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/V6wWKNij_1M?si=bU2BIyR7ULPbOdH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/V6wWKNij_1M?si=bU2BIyR7ULPbOdH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[28] = new filme(
@@ -342,7 +356,7 @@ arrayFilmes[28] = new filme(
     2014,
     "Terror, Suspense",
     "Jennifer Kent",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/k5WQZzDRVtw?si=ydv2HaPdSfYD3EVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/k5WQZzDRVtw?si=ydv2HaPdSfYD3EVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 arrayFilmes[29] = new filme(
@@ -353,7 +367,7 @@ arrayFilmes[29] = new filme(
     1993,
     "Terror, Animação, Musical",
     "Henry Selick",
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/wr6N_hZyBCk?si=Zq2h3xt-s6z-qQdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    `<iframe src="https://www.youtube.com/embed/wr6N_hZyBCk?si=Zq2h3xt-s6z-qQdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 );
 
 function exibirRow_geral() {
