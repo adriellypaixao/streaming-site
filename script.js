@@ -375,3 +375,13 @@ function exibirRow_Terror() {
     }
     document.getElementById("row-terror").innerHTML = text;
 }
+
+function exibirRow_Drama() {
+    let text = "<h2>Drama</h2>";
+    for (x in arrayFilmes) {
+        if (arrayFilmes[x].genero.includes("Drama")) {
+            text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`;
+        }
+    }
+    document.getElementById("row-drama").innerHTML = text;
+}
