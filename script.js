@@ -338,13 +338,10 @@ arrayFilmes[29] = new filme(
     "Henry Selick"
 );
 
-
-/* não está funconando! */
 function exibirRow_geral() {
-    let text = "";
-    for (i = 0; i < arrayFilmes.length; i++) {
-        text += "olá";
+    let text = ""
+    for (x in arrayFilmes) {
+        text += `<img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img>`
     }
-
     document.getElementById("row-geral").innerHTML = text;
 }
