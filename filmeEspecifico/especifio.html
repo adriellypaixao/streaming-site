@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/filmeEspecifico/style.css">
+    <title id="page_title"></title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="exibirRow_geral(), exibirRow_Fantasia(), exibirRow_Romance(), exibirRow_Terror(), exibirRow_Drama() ">
+<body onload="ExibirDetalhes()">
     <header id="navbar">
         <h1>Stream</h1> 
         <div id="navlist" class="">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Gêneros</a></li>
                 <li>
@@ -29,28 +29,9 @@
             <input type="text" name="pesquisar" id="input-pesquisar" placeholder="Pesquisar">
         </div>
     </header>
+    <div id="filmeEspecifico_id">
 
-    <br><div class="row" id="row-geral">
     </div>
-    <br>
-    <br>
-    <div class="row" id="row-fantasia">
-    </div>
-    <br>
-    <br>
-    <div class="row" id="row-romance">
-    </div>
-    <br>
-    <br>
-    <div class="row" id="row-terror">
-    </div>
-    <br>
-    <div class="row" id="row-drama">
-    </div>
-    <br> 
-    <br>
-    <!-- <p id="    rowgeral"></p> -->
-    <script src="/filmeEspecifico/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-

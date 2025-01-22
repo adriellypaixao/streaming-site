@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    background-color: #242020;
+  }
+  
+  header {
+    height: 100px;
+    background-color: rgb(253, 128, 2);
+    box-shadow: 0 0 8px gray;
+    color: rgb(255, 254, 252);
+  }
+  
+  h1 {
+    margin: 0;
+    padding-top: 12px;
+    margin-left: 16px;
+    font-style: italic;
+    
+  }
+  
+  #navlist ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: large;
+  }
+  
+  #navlist ul li a {
+    color: rgb(253, 253, 252);
+    text-decoration: none;
+  }
+  
+  #navlist ul li a:hover {
+    border-bottom: 2px solid rgb(119, 119, 118);
+  }
+  
+  #search-bar {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+  
+  #search-bar input {
+    width: 36vw;
+    border-radius: 6px;
+  }
+  
+  #navlist ul {
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: 0;
+  }
+  
+  /*  teste de como fazer as rows que rolam na tela  */
+  .row {
+    max-height: fit-content;
+    border: 1px solid grey;
+    display: flex;
+    overflow: auto;
+  }
+  
+  .row .item {
+    min-width: 160px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid rgb(253, 252, 252);
+  }
+  
+  /* controlando as imagens */
+  #row-geral,
+  #row-fantasia,
+  #row-romance,
+  #row-terror,
+  #row-drama {
+    max-height: fit-content;
+    border: 1px solid grey;
+    display: flex;
+    overflow: auto;
+    box-shadow: 0 0 10px grey;
+  }
+  
+  #row-geral img,
+  #row-fantasia img,
+  #row-romance img,
+  #row-terror img,
+  #row-drama img {
+    width: 100px;
+    height: 140px;
+    border-radius: 4px;
+  }
+  
+  /* O que fazer com os titulos de rows??? */
+  .row h2 {
+    display: none;
+  }
+  
+  #sidebar-button {
+    display: none;
+  }
+  
+  @media (min-width: 1400px) {
+    #nav-account-buttons {
+      position: absolute;
+      right: 16px;
+      top: 40px;
+    }
+  }
+  
+  @media (max-width: 790px) {
+    h1 {
+      padding-top: 6px;
+      margin-left: 10px;
+    }
+  
+    #search-bar {
+      position: absolute;
+      top: 14px;
+      right: 10px;
+    }
+  
+    #navlist ul {
+      padding-left: 16%;
+      padding-right: 16%;
+    }
+  
+    #search-bar input {
+      width: 54vw;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #navlist {
+      display: flex;
+    }
+  
+    #navlist ul {
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 470px) {
+    header {
+      height: 100px;
+    }
+  
+    #navlist {
+      position: absolute;
+      height: calc(100% - 2em - 8px);
+      width: 200px;
+      background-color: black;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+      display: none;
+    }
+  
+    #navlist.show {
+      display: block;
+    }
+  
+    #navlist > ul {
+      display: block;
+      position: relative;
+      top: 60px;
+    }
+  
+    #navlist > ul > li {
+      display: flex;
+      margin-bottom: 12px;
+      margin-left: -10px;
+    }
+  
+    #sidebar-button {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      background-color: whitesmoke;
+      color: black;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      margin-top: 4px;
+      left: 6px;
+    }
+  
+    #sidebar-button #sidebar-button-icon {
+      max-inline-size: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      margin-top: -2px;
+    }
+  }
+  
+  label {
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Georgia, 'Times New Roman', Times, serif, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    color:rgb(253, 128, 2);
+  }
+  
+  
+  .row > * {
+      transition: 0.35s; 
+      cursor: pointer;  
+    }
+    
+  
+    .row > *:hover {
+      opacity: 1;        
+      transform: scale(1); 
+    }
+    
+   
+    .row:hover > *:not(:hover) {
+      opacity: 0.4;        
+      transform: scale(0.9); 
+    }
+    
+  
