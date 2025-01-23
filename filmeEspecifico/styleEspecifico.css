@@ -1,0 +1,33 @@
+#filmeEspecifico_id {
+    color: white;
+}
+
+#filmeEspecifico_id h1 {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+#iframe_div * {
+    height: 300px;
+    width: 560px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#descricao {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+#informacoes {
+    padding-left: 20px;
+    span {
+        font-weight: bold;
+        color: orangered;
+    }
+}
