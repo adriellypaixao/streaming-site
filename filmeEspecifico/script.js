@@ -439,9 +439,9 @@ function ExibirDetalhes() {
         <div id="iframe_div">${arrayFilmes[idArrayFilmes].linkTrailer}</div>
         <p>${arrayFilmes[idArrayFilmes].descricao}</p> 
         <p><span>Duração: </span>${arrayFilmes[idArrayFilmes].duracao}</p> 
-        <p><span>Ano Lancamento: </span>${arrayFilmes[idArrayFilmes].anoLancamento}</p> 
-        <p><span>Generos: </span>${arrayFilmes[idArrayFilmes].genero}</p> 
-        <p><span>Diração: </span>${arrayFilmes[idArrayFilmes].diretor}</p> 
+        <p><span>Ano de Lançamento: </span>${arrayFilmes[idArrayFilmes].anoLancamento}</p> 
+        <p><span>Gêneros: </span>${arrayFilmes[idArrayFilmes].genero}</p> 
+        <p><span>Direção: </span>${arrayFilmes[idArrayFilmes].diretor}</p> 
         <p></p>`
     
     document.getElementById("filmeEspecifico_id").innerHTML = text;
