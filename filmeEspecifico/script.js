@@ -448,3 +448,28 @@ function ExibirDetalhes() {
     document.getElementById("filmeEspecifico_id").innerHTML = text;
     document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
 }
+
+function exibirPainelPesquisa() {
+    document.getElementById("search-div").style.display = "block";
+}
+
+function ocultarPainelPesquisa() {
+    document.getElementById("search-div").style.display = "none";
+}
+
+function getInputTexto() {
+    let input = document.getElementById("input-pesquisar").value;
+    exibirFilmesPorTitulos(input)
+}
+
+function exibirFilmesPorTitulos(tituloInput) {
+    let text = `<button type="button" onclick="ocultarPainelPesquisa()">X</button><ul id='search-ul'>`;
+    for (let x in arrayFilmes) {
+        tituloFilme = arrayFilmes[x].titulo
+        if (tituloFilme.toUpperCase().includes(tituloInput.toUpperCase())) {
+            text += `<li><a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' target='_top'>${arrayFilmes[x].titulo}</a></li>`
+        }
+    }
+    text += "</ul>"
+    document.getElementById("search-div").innerHTML = text;
+}
