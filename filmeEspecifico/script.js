@@ -35,7 +35,7 @@ function filme(imagemCapa, titulo, descricao, duracao, anoLancamento, genero, di
     this.genero = genero;
     this.diretor = diretor;
     this.linkTrailer = linkTrailer
-} 
+}
 
 // Filmes de Fantasia
 arrayFilmes[0] = new filme(
@@ -422,7 +422,7 @@ function exibirRow_Drama() {
 function definirEspecifico(arrayIndex) {
     n = arrayIndex
     /* alert(arrayFilmes[arrayIndex].titulo) */
-    if (typeof(Storage) !== "undefined") {
+    if (typeof (Storage) !== "undefined") {
         localStorage.setItem("indexEspecifico", n);
     } else {
         alert("Não é possivel guardar os dados necessarios para acessar esse filme.");
@@ -443,7 +443,13 @@ function ExibirDetalhes() {
         <p><span>Gêneros: </span>${arrayFilmes[idArrayFilmes].genero}</p> 
         <p><span>Direção: </span>${arrayFilmes[idArrayFilmes].diretor}</p> 
         <p></p>`
-    
+
     document.getElementById("filmeEspecifico_id").innerHTML = text;
     document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
+}
+
+class Filmes {
+    retornarFilmes() {
+        return arrayFilmes;
+    }
 }
