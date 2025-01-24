@@ -373,7 +373,7 @@ arrayFilmes[29] = new filme(
 function exibirRow_geral() {
     let text = ""
     for (x in arrayFilmes) {
-        text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].descricao}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`
+        text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].titulo}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`
     }
     document.getElementById("row-geral").innerHTML = text;
 }
@@ -382,7 +382,7 @@ function exibirRow_Fantasia() {
     let text = "<h2>Fantasia</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Fantasia")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].descricao}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].titulo}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-fantasia").innerHTML = text;
@@ -392,7 +392,7 @@ function exibirRow_Romance() {
     let text = "<h2>Romance</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Romance")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].descricao}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].titulo}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-romance").innerHTML = text;
@@ -402,7 +402,7 @@ function exibirRow_Terror() {
     let text = "<h2>Terror</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Terror")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].descricao}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].titulo}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-terror").innerHTML = text;
@@ -413,7 +413,7 @@ function exibirRow_Drama() {
     let text = "<h2>Drama</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Drama")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].descricao}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
+            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})' title='${arrayFilmes[x].titulo}'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-drama").innerHTML = text;
