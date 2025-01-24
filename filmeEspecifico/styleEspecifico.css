@@ -50,3 +50,13 @@
         padding-top: 20px;
     }
 }
+
+@media (max-width: 280px) {
+    #iframe_div * {
+        height: 160px;
+        width: 240px;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
