@@ -1,45 +1,45 @@
 body {
-    margin: 0;
-    background-color: #020106;
-  }
+  margin: 0;
+  background-color: #020106;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(253, 128, 2);
+  box-shadow: 0 0 8px gray;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  margin: 0;
+  padding-top: 12px;
+  margin-left: 16px;
+  font-style: italic;
+}
   
-  header {
-    height: 100px;
-    background-color: rgb(253, 128, 2);
-    box-shadow: 0 0 8px gray;
-    color: rgb(0, 0, 0);
-  }
+#navlist ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: large;
+}
   
-  h1 {
-    margin: 0;
-    padding-top: 12px;
-    margin-left: 16px;
-    font-style: italic;
-  }
+#navlist ul li a {
+  color: rgb(253, 253, 252);
+  text-decoration: none;
+}
   
-  #navlist ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: large;
-  }
-  
-  #navlist ul li a {
-    color: rgb(253, 253, 252);
-    text-decoration: none;
-  }
-  
-  #navlist ul li a:hover {
-    border-bottom: 2px solid rgb(119, 119, 118);
-  }
-  
-  #search-bar {
-    position: absolute;
-    top: 14px;
-    right: 10px;
-  }
+#navlist ul li a:hover {
+  border-bottom: 2px solid rgb(119, 119, 118);
+}
+
+#search-bar {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
   
   #search-bar input {
     width: 36vw;
@@ -101,35 +101,65 @@ body {
     display: none;
   }
   
-  @media (min-width: 1400px) {
-    #nav-account-buttons {
-      position: absolute;
-      right: 16px;
-      top: 40px;
-    }
+  /* Div de pesquisa */
+#search-div {
+  width: 80%;
+  height: 650%;
+  display: block;
+  margin: auto;
+  position: relative;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  top: -40px;
+  display: none;
+  padding-right: 20px;
+  overflow-y: auto;
+}
+
+#search-div button {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+#search-ul li {
+  padding-bottom: 16px;
+}
+
+#search-ul li a {
+  color: black;
+}
+
+@media (min-width: 1400px) {
+  #nav-account-buttons {
+    position: absolute;
+    right: 16px;
+    top: 40px;
+  }
+}
+  
+@media (max-width: 790px) {
+  h1 {
+    padding-top: 6px;
+    margin-left: 10px;
   }
   
-  @media (max-width: 790px) {
-    h1 {
-      padding-top: 6px;
-      margin-left: 10px;
-    }
-  
-    #search-bar {
-      position: absolute;
-      top: 14px;
-      right: 10px;
-    }
-  
-    #navlist ul {
-      padding-left: 16%;
-      padding-right: 16%;
-    }
-  
-    #search-bar input {
-      width: 54vw;
-    }
+  #search-bar {
+    position: absolute;
+    top: 14px;
+    right: 10px;
   }
+  
+  #navlist ul {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+  
+  #search-bar input {
+    width: 54vw;
+  }
+}
   
   @media (max-width: 700px) {
     #navlist {
@@ -192,7 +222,7 @@ body {
       font-weight: bold;
       text-align: center;
       margin: 0;
-      margin-top: 3px;
+      margin-top: -2px;
     }
 
     #row-geral img,
@@ -204,6 +234,20 @@ body {
       height: 140px;
       border-radius: 4px;
     }
+
+    #search-div {
+      width: 80%;
+      height: 600%;
+      display: block;
+      margin: auto;
+      position: relative;
+      background-color: whitesmoke;
+      box-shadow: 0 0 10px black;
+      border-radius: 20px;
+      top: 10px;
+      display: none;
+    }
+    
   }
   
   label {
@@ -231,3 +275,5 @@ body {
       opacity: 0.4;        
       transform: scale(0.9); 
     }
+
+
