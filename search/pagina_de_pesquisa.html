@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style_search.css">
     <title>Search</title>
+
 </head>
+
 <body>
-    <header id="navbar">
-        <h1>Stream</h1> 
-        <div id="return-button">
-            <p id="return-button-icon" style="padding-left: 5px;">➜</p>
+
+    <div id="container">
+
+        <div id="stream-title">
+            <h2 id="stream-name">Stream</h2>
         </div>
+
+        <div class="input-group">
+            <div class="input-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input id="search" type="text" class="input-field" placeholder="Pesquisar...">
+        </div>
+
+        <ul class="items">
+            <hr>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="" alt="">
+                </div>
+                <div class="movie-title">
+                    <div id="movie-title-name">
+
+                    </div>
+                </div>
+                
+            </li>
+
+            <hr>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="" alt="">
+                </div>
+                <div class="movie-title">
+                    <div id="movie-title-name">
+
+                    </div>
+                </div>
+            </li>
+
+            <hr>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="" alt="">
+                </div>
+                <div class="movie-title">
+                    <div id="movie-title-name">
+
+                    </div>
+                </div>
+            </li>
+
+            <hr>
+
+            <li class="item">
+                <div class="item-image">
+                    <img src="" alt="">
+                </div>
+                <div class="movie-title">
+                    <div id="movie-title-name">
+                        Nome do filme, directed by
+                    </div>
+                </div>
+            </li>
+            <hr>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <!--<header id="navbar">
+        <div id="stream-title">
+            <h2 id="stream-name">Stream</h2>
+        </div>
+
+        <div class="search-bar">
+            <div id="return-button">
+                <h2 id="return-button-icon" style="padding-left: 5px;">➜</h2>
+            </div>
+
+            <div id="search-input">
+                <input type="text" name="pesquisar" id="input-pesquisar" placeholder="Pesquisar">
+            </div>
+
+        </div>
+
+
+
         <!--<div id="navlist" class="">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -31,5 +130,17 @@
             <input type="text" name="pesquisar" id="input-pesquisar" placeholder="Pesquisar">
         </div>-->
     </header>
+
+    <div id="movie-list">
+        <div id="movie-item1">
+            <div id="movie-photo1"></div>
+            <div id="movie-name1"></div>
+
+
+        </div>
+    </div>
+
+    <script src="/filmeEspecifico/script.js"></script>
 </body>
+
 </html>

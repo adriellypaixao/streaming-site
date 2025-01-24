@@ -1,29 +1,99 @@
 body {
-    font-family: Arial, sans-serif; /* Fonte da página */
-    background-color: gray; /* Cor de fundo */
-    margin: 0; /* Remove margens padrão */
-    padding: 20px; /* Adiciona espaço interno */
+    margin: 0;
+    background-color: white;
 }
 
-#container {
-    max-width: 600px; /* Largura máxima do container */
-    margin: auto; /* Centraliza o container */
-    background: black; /* Cor de fundo do container */
-    padding: 20px; /* Espaço interno do container */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+#stream-title {
+    margin: 0;
+    height: 40px;
+    background-color: rgb(253, 128, 2);
+    box-shadow: 0 0 8px gray;
+    color: rgb(255, 254, 252);
 }
 
-#search-bar {
+#stream-name {
+    margin-top: 0;
+    padding-top: 5px;
+    margin-left: 15px;
+    font-style: italic;
+
+}
+
+.input-group {
+margin-top: 4vw;
+background-color: gray;
+border-radius: 100px;
+opacity: 0.7;
+padding: 10px;
+}
+
+.input-icon {
+    margin-left: 20px;
+}
+
+#search {
+    margin-left: 50px;
+    width: 80%;
+}
+
+.items {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.item {
+    display: flex; /* Torna os elementos filhos (item-image e movie-title) flexíveis */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 20px;
+}
+
+/*.item > div {
+    display: inline-block; /* Permite que as divs fiquem lado a lado */
+    /*width: 45%; /* Ajuste a largura conforme necessário */
+    /*height: 100px; /* Altura da div */
+    /*background-color: gray; /* Cor de fundo */
+    /*margin: 2%;
+}*/
+
+.item-image {
+    background-color: gray;
+    width: 20vw;
+    height: 25vh;
+}
+
+.movie-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+    width: 70%;
+    height: 25vh;
+}
+
+#movie-title-name {
+    background-color: gray;
+    width: 90%;
+    height: 20%;
+    
+}
+
+
+
+/*#return-button-icon {
+    top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
     position: absolute;
-    top: 14px;
-    right: 10px;
-}
+    transform: rotate(180deg);
+    color: black;
+}*/
 
-#result-bar {
+
+
+/*#result-bar {
     /*display: none;
     /* Inicialmente oculta 
-    background-color: #f0f0f0; /* Cor de fundo cinza */
+    background-color: #f0f0f0; /* Cor de fundo cinza 
     position: absolute;
     top: 25px;
     right: 10px;
@@ -37,4 +107,4 @@ body {
 #input-pesquisar {
     width: 36vw;
     border-radius: 6px;
-}
+}*/
