@@ -1,0 +1,4 @@
+document.getElementById('input-pesquisar').addEventListener('input', function() {
+    var inputValue = this.value; // Captura o valor do input
+    document.getElementById('result').innerText = inputValue; // Atualiza o texto do resultado
+});
