@@ -373,16 +373,7 @@ arrayFilmes[29] = new filme(
 function exibirRow_geral() {
     let text = ""
     for (x in arrayFilmes) {
-        text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`
-    }
-    document.getElementById("row-geral").innerHTML = text;
-}
 
-function exibirRow_Fantasia() {
-    let text = "<h2>Fantasia</h2>";
-    for (x in arrayFilmes) {
-        if (arrayFilmes[x].genero.includes("Fantasia")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-fantasia").innerHTML = text;
@@ -392,7 +383,6 @@ function exibirRow_Romance() {
     let text = "<h2>Romance</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Romance")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-romance").innerHTML = text;
@@ -402,7 +392,6 @@ function exibirRow_Terror() {
     let text = "<h2>Terror</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Terror")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-terror").innerHTML = text;
@@ -413,7 +402,6 @@ function exibirRow_Drama() {
     let text = "<h2>Drama</h2>";
     for (x in arrayFilmes) {
         if (arrayFilmes[x].genero.includes("Drama")) {
-            text += `<a href='filmeEspecifico/especifio.html' onclick='definirEspecifico(${x})'><img src="${arrayFilmes[x].imagemCapa}" id="img-id-${x}"></img></a>`;
         }
     }
     document.getElementById("row-drama").innerHTML = text;
@@ -435,15 +423,4 @@ function definirEspecifico(arrayIndex) {
 function ExibirDetalhes() {
     let idArrayFilmes = localStorage.getItem("indexEspecifico");
     /* alert(arrayFilmes[localStorage.getItem("indexEspecifico")].titulo) */
-    let text = `<h1>${arrayFilmes[idArrayFilmes].titulo}</h1>
-        <div id="iframe_div">${arrayFilmes[idArrayFilmes].linkTrailer}</div>
-        <p>${arrayFilmes[idArrayFilmes].descricao}</p> 
-        <p><span>Duração: </span>${arrayFilmes[idArrayFilmes].duracao}</p> 
-        <p><span>Ano Lancamento: </span>${arrayFilmes[idArrayFilmes].anoLancamento}</p> 
-        <p><span>Generos: </span>${arrayFilmes[idArrayFilmes].genero}</p> 
-        <p><span>Diração: </span>${arrayFilmes[idArrayFilmes].diretor}</p> 
-        <p></p>`
-    
-    document.getElementById("filmeEspecifico_id").innerHTML = text;
-    document.getElementById("page_title").innerHTML = arrayFilmes[idArrayFilmes].titulo;
-}
+

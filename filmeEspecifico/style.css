@@ -1,48 +1,6 @@
-body {
-    margin: 0;
-    background-color: #242020;
-  }
-  
-  header {
-    height: 100px;
-    background-color: rgb(253, 128, 2);
-    box-shadow: 0 0 8px gray;
-    color: rgb(255, 254, 252);
-  }
-  
-  h1 {
-    margin: 0;
-    padding-top: 12px;
-    margin-left: 16px;
-    font-style: italic;
-    
-  }
-  
-  #navlist ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: large;
-  }
-  
-  #navlist ul li a {
-    color: rgb(253, 253, 252);
-    text-decoration: none;
-  }
-  
-  #navlist ul li a:hover {
-    border-bottom: 2px solid rgb(119, 119, 118);
-  }
-  
-  #search-bar {
-    position: absolute;
-    top: 14px;
-    right: 10px;
-  }
-  
-  #search-bar input {
+
+
+ #search-bar input {
     width: 36vw;
     border-radius: 6px;
   }
@@ -80,7 +38,6 @@ body {
     border: 1px solid grey;
     display: flex;
     overflow: auto;
-    box-shadow: 0 0 10px grey;
   }
   
   #row-geral img,
@@ -88,8 +45,7 @@ body {
   #row-romance img,
   #row-terror img,
   #row-drama img {
-    width: 100px;
-    height: 140px;
+
     border-radius: 4px;
   }
   
@@ -100,36 +56,6 @@ body {
   
   #sidebar-button {
     display: none;
-  }
-  
-  @media (min-width: 1400px) {
-    #nav-account-buttons {
-      position: absolute;
-      right: 16px;
-      top: 40px;
-    }
-  }
-  
-  @media (max-width: 790px) {
-    h1 {
-      padding-top: 6px;
-      margin-left: 10px;
-    }
-  
-    #search-bar {
-      position: absolute;
-      top: 14px;
-      right: 10px;
-    }
-  
-    #navlist ul {
-      padding-left: 16%;
-      padding-right: 16%;
-    }
-  
-    #search-bar input {
-      width: 54vw;
-    }
   }
   
   @media (max-width: 700px) {
@@ -222,5 +148,3 @@ body {
       opacity: 0.4;        
       transform: scale(0.9); 
     }
-    
-  
